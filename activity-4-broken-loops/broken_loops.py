@@ -21,9 +21,10 @@ def delivery_outcome(door_log):
             return f"Delivered on attempt {attempts}"
         if attempts >= 3:
             return "Returned to depot"
+        print (attempts)
     return "Ran out of days"
 
 
 count_to(5)
 print(total_of([12, 7, 19, 3]))
-print(delivery_outcome(["no answer", "no answer", "answered"]))
+print(delivery_outcome(["no answer", "no answer", "no answer","no answer","no answer"]))
