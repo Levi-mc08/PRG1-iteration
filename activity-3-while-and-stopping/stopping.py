@@ -1,15 +1,23 @@
+# def countdown(start):
+#     count = start
+#     while count > 0:
+#         print(count)
+#         count = count - 1
+#     print("Liftoff")
+
 def countdown(start):
     count = start
-    while count > 0:
+    for count in range(count, 0, -1):
         print(count)
-        count = count - 1
     print("Liftoff")
 
 
 def first_over(limit, readings):
+    readcount = 0
     for reading in readings:
+        readcount += 1
         if reading > limit:
-            return reading
+            return readcount
     return None
 
 
